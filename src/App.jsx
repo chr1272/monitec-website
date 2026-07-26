@@ -34,11 +34,12 @@ function App() {
               Request Demo
             </a>
             <a
-              href="#solutions"
+              href="#data-reports"
               className="rounded-button border border-secondary px-6 py-3 font-semibold text-secondary transition-colors hover:bg-secondary hover:text-white"
             >
-              Explore Platform
+              View Sample Report
             </a>
+
           </div>
         </section>
 

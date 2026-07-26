@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Logo from "./Logo";
 import RegionSwitcher from "./RegionSwitcher";
 import { REGIONS, DEFAULT_REGION_CODE } from "../data/regions";
@@ -15,32 +15,15 @@ export default function Header() {
   const [activeRegion, setActiveRegion] = useState(
     REGIONS.find((r) => r.code === DEFAULT_REGION_CODE) ?? REGIONS[0]
   );
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  useEffect(() => {
-    function handleScroll() {
-      setScrolled(window.scrollY > 8);
-    }
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled
-          ? "bg-neutral-white/90 backdrop-blur-md shadow-sm border-b border-border-light"
-          : "bg-neutral-white/70 backdrop-blur-sm"
-      }`}
-    >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5 lg:px-8">
+    <header className="sticky top-0 z-50 w-full border-b border-border-light bg-neutral-white shadow-sm">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* Logo */}
-        <a href="#top" className="shrink-0">
-          <Logo domain={activeRegion.domain} />
+        <a href="#top" className="flex h-full shrink-0 items-center py-2">
+          <Logo domain={activeRegion.domain} className="h-full" />
         </a>
-
-
 
         {/* Desktop Nav */}
         <nav className="hidden items-center gap-8 lg:flex">

@@ -15,7 +15,8 @@ export const REGIONS = [
       solutions: "Solutions",
       about: "About",
       privacy: "Privacy & GDPR",
-      cta: "Request Deployment Kit",
+      cta: "Request Demo",
+
     },
   },
   {
@@ -31,7 +32,8 @@ export const REGIONS = [
       solutions: "Lösungen",
       about: "Über uns",
       privacy: "Datenschutz & DSGVO",
-      cta: "Deployment-Kit anfordern",
+      cta: "Demo anfordern",
+
     },
   },
   {
@@ -47,7 +49,8 @@ export const REGIONS = [
       solutions: "Solutions",
       about: "À propos",
       privacy: "Confidentialité & RGPD",
-      cta: "Demander le kit de déploiement",
+      cta: "Demander une démo",
+
     },
   },
 ];

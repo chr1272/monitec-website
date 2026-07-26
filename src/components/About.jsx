@@ -38,6 +38,12 @@ export default function About() {
             anonymized statistical reports — never video, never license plates, never
             audio recordings of conversations.
           </p>
+          <p className="mt-4 text-lg leading-relaxed text-text-slate">
+            Founded by a former longtime Airbus engineer, Monitec applies aerospace-grade
+            system documentation and engineering rigor to roadside telemetry and traffic
+            analysis.
+          </p>
+
         </div>
 
         <div className="space-y-6">

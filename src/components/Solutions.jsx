@@ -2,7 +2,8 @@ const SOLUTIONS = [
   {
     title: "Municipalities & Local Government",
     description:
-      "Support traffic-calming decisions, speed-limit reviews, and infrastructure investment with objective, anonymized data — ready for council presentations.",
+      "Support municipalities, citizen organizations, and traffic-calming initiatives with objective, anonymized data — ready for council presentations and community advocacy alike.",
+
     icon: (
       <path
         strokeLinecap="round"
