@@ -23,8 +23,9 @@ export default function About() {
         <div>
           <p className="tagline text-secondary text-sm mb-4">About Monitec</p>
           <h2 className="text-3xl font-bold text-primary sm:text-4xl">
-            Built for Trustworthy, Actionable Fleet Intelligence
+            Built for Trustworthy, Actionable Traffic Intelligence
           </h2>
+
           <p className="mt-6 text-lg leading-relaxed text-text-slate">
             Monitec designs diagnostic telemetry and decision-support systems that help
             municipalities, planners, and infrastructure teams understand how vehicles

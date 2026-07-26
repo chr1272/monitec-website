@@ -7,6 +7,8 @@ export const REGIONS = [
     domain: ".io",
     lang: "EN",
     label: "International",
+    tagline: "TELEMETRY DATA & ANALYSIS",
+
     nav: {
       howItWorks: "How it Works",
       dataReports: "Data & Reports",
@@ -21,6 +23,8 @@ export const REGIONS = [
     domain: ".at",
     lang: "DE",
     label: "Österreich",
+    tagline: "TELEMETRIE-DATEN & ANALYSE",
+
     nav: {
       howItWorks: "So funktioniert's",
       dataReports: "Daten & Berichte",
@@ -35,6 +39,8 @@ export const REGIONS = [
     domain: ".fr",
     lang: "FR",
     label: "France",
+    tagline: "DONNÉES DE TÉLÉMÉTRIE & ANALYSE",
+
     nav: {
       howItWorks: "Comment ça marche",
       dataReports: "Données & Rapports",

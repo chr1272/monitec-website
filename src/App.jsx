@@ -15,16 +15,17 @@ function App() {
       <main id="top">
         <section className="mx-auto max-w-7xl px-6 py-24 text-center lg:px-8">
           <p className="tagline text-secondary text-sm mb-4">
-            Fleet Intelligence &amp; Telemetry
+            Empirical Traffic &amp; Acoustic Ground Truth
           </p>
           <h1 className="text-4xl font-bold text-primary sm:text-5xl lg:text-6xl">
-            Real-time Telemetry Data &amp; Fleet Intelligence
+            Empirical Traffic &amp; Acoustic Ground Truth
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-text-slate">
-            Monitec is a diagnostic telemetry and decision-support system —
-            fully GDPR-compliant, 100% anonymized statistical data, no video
-            or license-plate storage.
+            Autonomous roadside telemetry stations delivered by carrier.
+            Collect precise vehicle counts, speed vectors, decibel frequency
+            bands, and weather data for decision support.
           </p>
+
           <div className="mt-10 flex items-center justify-center gap-4">
             <a
               href="#request-kit"

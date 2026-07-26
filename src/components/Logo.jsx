@@ -3,11 +3,17 @@
  * road icon (telematics / vehicles), plus a dynamic domain suffix that
  * updates in real time based on the active region (.io / .at / .fr).
  */
-export default function Logo({ domain = ".io", className = "", dark = false }) {
+export default function Logo({
+  domain = ".io",
+  tagline,
+  className = "",
+  dark = false,
+}) {
   const primaryTextColor = dark ? "#F4F7FA" : "#071C33";
 
   return (
     <div className={`flex items-center gap-2.5 select-none ${className}`}>
+
       <svg
         width="36"
         height="36"
@@ -19,12 +25,13 @@ export default function Logo({ domain = ".io", className = "", dark = false }) {
         {/* Road icon base */}
         <path
           d="M10 40 L18 8 H30 L38 40"
-          stroke="#071C33"
+          stroke="#0F75BC"
           strokeWidth="3"
           strokeLinecap="round"
           strokeLinejoin="round"
           fill="none"
         />
+
         {/* Road center dashes */}
         <line
           x1="24"
@@ -64,10 +71,21 @@ export default function Logo({ domain = ".io", className = "", dark = false }) {
         <circle cx="24" cy="8" r="3" fill="#00C1D5" />
       </svg>
 
-      <span className="flex items-baseline font-heading font-bold text-xl leading-none tracking-tight">
-        <span style={{ color: primaryTextColor }}>Monitec</span>
-        <span className="text-accent">{domain}</span>
-      </span>
+      <div className="flex flex-col">
+        <span className="flex items-baseline font-heading font-bold text-xl leading-none tracking-tight">
+          <span style={{ color: primaryTextColor }}>monitec</span>
+          <span className="text-accent">{domain}</span>
+        </span>
+        {tagline && (
+          <span
+            className="tagline mt-0.5 text-[10px] leading-none text-secondary"
+            style={{ letterSpacing: "1.5px" }}
+          >
+            {tagline}
+          </span>
+        )}
+      </div>
     </div>
   );
 }
+

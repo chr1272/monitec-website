@@ -37,8 +37,9 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5 lg:px-8">
         {/* Logo */}
         <a href="#top" className="shrink-0">
-          <Logo domain={activeRegion.domain} />
+          <Logo domain={activeRegion.domain} tagline={activeRegion.tagline} />
         </a>
+
 
         {/* Desktop Nav */}
         <nav className="hidden items-center gap-8 lg:flex">
