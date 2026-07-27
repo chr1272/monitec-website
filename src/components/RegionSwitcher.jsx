@@ -11,6 +11,10 @@ import { STORAGE_KEY } from "../i18n";
  * updates the logo domain suffix / tagline / all text in real time via
  * the i18next language change.
  */
+// The real production hostnames the site is deployed to, derived from the
+// region domain suffixes (e.g. "monitec.io", "monitec.at", "monitec.fr").
+const PRODUCTION_HOSTNAMES = REGIONS.map((region) => `monitec${region.domain}`);
+
 export default function RegionSwitcher({ activeRegion }) {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -27,6 +31,27 @@ export default function RegionSwitcher({ activeRegion }) {
   }, []);
 
   function handleSelect(region) {
+    const targetHostname = `monitec${region.domain}`;
+    const currentHostname = window.location.hostname;
+    const onProductionDomain = PRODUCTION_HOSTNAMES.includes(currentHostname);
+
+    // On a real monitec.* production domain: navigate the browser to the
+    // matching regional domain so the address bar reflects the chosen
+    // language/region. The domain rule in i18n.js will pick up the correct
+    // language on load. This causes a full page reload by design.
+    if (onProductionDomain && currentHostname !== targetHostname) {
+      try {
+        window.localStorage.setItem(STORAGE_KEY, region.langCode);
+      } catch {
+        // localStorage may be unavailable — the domain rule will still
+        // resolve the correct language on the target domain.
+      }
+      window.location.href = `${window.location.protocol}//${targetHostname}${window.location.pathname}${window.location.search}${window.location.hash}`;
+      return;
+    }
+
+    // Local/dev/preview environments (e.g. localhost, *.web.app) don't have
+    // the regional domains available, so just switch the language in place.
     i18n.changeLanguage(region.langCode);
     try {
       window.localStorage.setItem(STORAGE_KEY, region.langCode);
@@ -36,6 +61,7 @@ export default function RegionSwitcher({ activeRegion }) {
     }
     setOpen(false);
   }
+
 
   return (
     <div className="relative" ref={containerRef}>
