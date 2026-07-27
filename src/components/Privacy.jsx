@@ -1,44 +1,22 @@
-const GUARANTEES = [
-  {
-    title: "No Video or Image Storage",
-    description:
-      "Our sensors process signals in real time and never store video footage or still images of vehicles or people.",
-  },
-  {
-    title: "No License Plate Recognition",
-    description:
-      "Vehicle identification is never performed — data is captured and reported purely as anonymized statistics.",
-  },
-  {
-    title: "GDPR & CNIL Compliant",
-    description:
-      "Fully aligned with EU GDPR and French CNIL requirements, as well as Austrian DSGVO standards for municipal deployments.",
-  },
-  {
-    title: "100% Anonymized Statistics",
-    description:
-      "All outputs — counts, speed distributions, acoustic spectrums — are aggregate statistical data with no personal identifiers.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Privacy() {
+  const { t } = useTranslation();
+  const guarantees = t("privacy.guarantees", { returnObjects: true });
+
   return (
     <section id="privacy" className="bg-neutral-light py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="tagline text-secondary text-sm mb-4">Privacy &amp; GDPR</p>
+          <p className="tagline text-secondary text-sm mb-4">{t("privacy.tagline")}</p>
           <h2 className="text-3xl font-bold text-primary sm:text-4xl">
-            Compliance Built Into Every Layer
+            {t("privacy.title")}
           </h2>
-          <p className="mt-4 text-lg text-text-slate">
-            Monitec is engineered from the ground up to respect the privacy of every
-            individual on the road, while still delivering the insights decision-makers
-            need.
-          </p>
+          <p className="mt-4 text-lg text-text-slate">{t("privacy.subtitle")}</p>
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {GUARANTEES.map((item) => (
+          {guarantees.map((item) => (
             <div
               key={item.title}
               className="rounded-card border border-border-light bg-neutral-white p-6 text-center shadow-sm"

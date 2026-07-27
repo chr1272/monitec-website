@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "Monitec — Empirical Traffic & Acoustic Ground Truth",
+    "description": "Monitec — Empirical Traffic & Acoustic Ground Truth. Autonomous roadside telemetry stations delivered by carrier, collecting vehicle counts, speed vectors, decibel frequency bands, and weather data for decision support."
+  },
+  "nav": {
+    "howItWorks": "How it Works",
+    "dataReports": "Data & Reports",
+    "solutions": "Solutions",
+    "about": "About",
+    "privacy": "Privacy & GDPR",
+    "cta": "Request Demo"
+  },
+  "hero": {
+    "tagline": "Empirical Traffic & Acoustic Ground Truth",
+    "title": "Empirical Traffic & Acoustic Ground Truth",
+    "subtitle": "Autonomous roadside telemetry stations delivered by carrier. Collect precise vehicle counts, speed vectors, decibel frequency bands, and weather data for decision support.",
+    "ctaDemo": "Request Demo",
+    "ctaReport": "View Sample Report"
+  },
+  "howItWorks": {
+    "tagline": "Simple. Fast. Compliant.",
+    "title": "How It Works",
+    "subtitle": "From unboxing to insight in four straightforward steps — no installation crew, no complex integration.",
+    "steps": [
+      {
+        "title": "Deploy the Sensor Kit",
+        "description": "Unbox and self-install the compact roadside unit in minutes. Power it with the included 230V adapter, a 12V battery, or a solar panel — no technician visit required."
+      },
+      {
+        "title": "Collect Telemetry Data",
+        "description": "The device continuously and anonymously measures vehicle counts, speed distribution, and acoustic frequency spectrum, correlating it with live weather conditions."
+      },
+      {
+        "title": "Return & Sync",
+        "description": "Ship the unit back using the prepaid return box, or sync remotely where connectivity allows. All data is encrypted and 100% anonymized — no video, no license plates."
+      },
+      {
+        "title": "Get Your Report",
+        "description": "Receive an automated PDF & web analysis report with actionable insights — ready to support municipal decisions, traffic planning, and safety investments."
+      }
+    ]
+  },
+  "dataReports": {
+    "tagline": "Data & Reports",
+    "title": "Decision-Ready Insights, Automatically Generated",
+    "subtitle": "Every deployment produces a structured analysis report designed to support municipal and infrastructure decisions — no manual data crunching required.",
+    "features": [
+      "Vehicle counts & classification by time-of-day",
+      "Speed distribution histograms & percentile breakdowns",
+      "Acoustic frequency spectrum analysis",
+      "Weather correlation overlays (rain, fog, temperature)",
+      "Automated PDF export & shareable web dashboard"
+    ],
+    "cta": "See a Sample Report",
+    "metrics": {
+      "vehicleCount": { "label": "Vehicle Count", "unit": "/ week" },
+      "avgSpeed": { "label": "Avg. Speed", "unit": "km/h" },
+      "peakNoise": { "label": "Peak Noise Level", "unit": "dB" },
+      "weatherEvents": { "label": "Weather-Correlated Events", "unit": "flagged" }
+    },
+    "trendSuffix": "vs. last period"
+  },
+  "solutions": {
+    "tagline": "Who It's For",
+    "title": "Solutions",
+    "subtitle": "A single telemetry platform, tailored to the decisions that matter most across public and private stakeholders.",
+    "items": [
+      {
+        "title": "Municipalities & Local Government",
+        "description": "Support municipalities, citizen organizations, and traffic-calming initiatives with objective, anonymized data — ready for council presentations and community advocacy alike."
+      },
+      {
+        "title": "Traffic Planning & Engineering",
+        "description": "Get granular speed, volume, and acoustic data to model interventions, validate road-design changes, and quantify their real-world impact."
+      },
+      {
+        "title": "Real Estate & Noise Compliance",
+        "description": "Document acoustic frequency spectrums near developments to support noise-impact assessments and regulatory compliance filings."
+      },
+      {
+        "title": "Research & Environmental Studies",
+        "description": "Correlate traffic behavior with live weather conditions across long-term deployments to power academic and environmental research."
+      }
+    ]
+  },
+  "about": {
+    "tagline": "About Monitec",
+    "title": "Built for Trustworthy, Actionable Traffic Intelligence",
+    "paragraphs": [
+      "Monitec designs diagnostic telemetry and decision-support systems that help municipalities, planners, and infrastructure teams understand how vehicles move through their roads — without compromising the privacy of the people behind the wheel.",
+      "Our compact, self-installable sensor kits are shipped directly to customers, powered by standard 230V, 12V battery, or solar setups, and return fully anonymized statistical reports — never video, never license plates, never audio recordings of conversations.",
+      "Founded by a former longtime Airbus engineer, Monitec applies aerospace-grade system documentation and engineering rigor to roadside telemetry and traffic analysis."
+    ],
+    "values": [
+      {
+        "title": "Privacy by Design",
+        "description": "Every product decision starts with anonymization — we build systems that measure behavior, not identity."
+      },
+      {
+        "title": "Self-Install Simplicity",
+        "description": "Hardware that ships in a box and works out of it — no technicians, no downtime, no complexity."
+      },
+      {
+        "title": "Decision-Ready Data",
+        "description": "We don't just collect data — we transform it into reports municipalities and planners can act on immediately."
+      }
+    ]
+  },
+  "privacy": {
+    "tagline": "Privacy & GDPR",
+    "title": "Compliance Built Into Every Layer",
+    "subtitle": "Monitec is engineered from the ground up to respect the privacy of every individual on the road, while still delivering the insights decision-makers need.",
+    "guarantees": [
+      {
+        "title": "No Video or Image Storage",
+        "description": "Our sensors process signals in real time and never store video footage or still images of vehicles or people."
+      },
+      {
+        "title": "No License Plate Recognition",
+        "description": "Vehicle identification is never performed — data is captured and reported purely as anonymized statistics."
+      },
+      {
+        "title": "GDPR & CNIL Compliant",
+        "description": "Fully aligned with EU GDPR and French CNIL requirements, as well as Austrian DSGVO standards for municipal deployments."
+      },
+      {
+        "title": "100% Anonymized Statistics",
+        "description": "All outputs — counts, speed distributions, acoustic spectrums — are aggregate statistical data with no personal identifiers."
+      }
+    ]
+  },
+  "requestKit": {
+    "tagline": "Product Demo",
+    "title": "Schedule Your Product Demo",
+    "subtitle": "Interested in seeing Monitec in action? Pick a time that works for you directly on our calendar below, and we'll walk you through a live deployment kit demo tailored to your use case — no commitment required.",
+    "iframeTitle": "Schedule a Monitec product demo",
+    "note": "Prefer email? You can also reach us directly and we'll help you find a slot.",
+    "emailCta": "Email Us Instead"
+  },
+  "footer": {
+    "copyright": "© {{year}} Monitec. All rights reserved.",
+    "complianceNote": "Fully GDPR-compliant · 100% anonymized statistical data"
+  }
+}

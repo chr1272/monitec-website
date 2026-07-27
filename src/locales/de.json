@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "Monitec — Empirische Verkehrs- & Akustikdaten",
+    "description": "Monitec — Empirische Verkehrs- & Akustikdaten. Autonome Roadside-Telemetriestationen, geliefert per Spedition, zur Erfassung von Fahrzeugzahlen, Geschwindigkeitsvektoren, Dezibel-Frequenzbändern und Wetterdaten als Entscheidungsgrundlage."
+  },
+  "nav": {
+    "howItWorks": "So funktioniert's",
+    "dataReports": "Daten & Berichte",
+    "solutions": "Lösungen",
+    "about": "Über uns",
+    "privacy": "Datenschutz & DSGVO",
+    "cta": "Demo anfordern"
+  },
+  "hero": {
+    "tagline": "Empirische Verkehrs- & Akustikdaten",
+    "title": "Empirische Verkehrs- & Akustikdaten",
+    "subtitle": "Autonome Roadside-Telemetriestationen, geliefert per Spedition. Erfassen Sie präzise Fahrzeugzahlen, Geschwindigkeitsvektoren, Dezibel-Frequenzbänder und Wetterdaten als Entscheidungsgrundlage.",
+    "ctaDemo": "Demo anfordern",
+    "ctaReport": "Musterbericht ansehen"
+  },
+  "howItWorks": {
+    "tagline": "Einfach. Schnell. Konform.",
+    "title": "So funktioniert's",
+    "subtitle": "Vom Auspacken bis zur Erkenntnis in vier einfachen Schritten — kein Installationsteam, keine komplexe Integration.",
+    "steps": [
+      {
+        "title": "Sensor-Kit installieren",
+        "description": "Packen Sie die kompakte Roadside-Einheit aus und installieren Sie sie in wenigen Minuten selbst. Betrieben mit dem mitgelieferten 230V-Adapter, einer 12V-Batterie oder einem Solarpanel — kein Techniker erforderlich."
+      },
+      {
+        "title": "Telemetriedaten erfassen",
+        "description": "Das Gerät misst kontinuierlich und anonym Fahrzeugzahlen, Geschwindigkeitsverteilung und akustisches Frequenzspektrum und korreliert diese mit den aktuellen Wetterbedingungen."
+      },
+      {
+        "title": "Zurücksenden & Synchronisieren",
+        "description": "Senden Sie das Gerät mit der frankierten Rücksendebox zurück oder synchronisieren Sie es remote, sofern Konnektivität besteht. Alle Daten sind verschlüsselt und zu 100 % anonymisiert — kein Video, keine Kennzeichen."
+      },
+      {
+        "title": "Bericht erhalten",
+        "description": "Erhalten Sie einen automatisierten PDF- und Web-Analysebericht mit umsetzbaren Erkenntnissen — bereit zur Unterstützung kommunaler Entscheidungen, Verkehrsplanung und Sicherheitsinvestitionen."
+      }
+    ]
+  },
+  "dataReports": {
+    "tagline": "Daten & Berichte",
+    "title": "Entscheidungsreife Erkenntnisse, automatisch generiert",
+    "subtitle": "Jeder Einsatz erzeugt einen strukturierten Analysebericht zur Unterstützung kommunaler und infrastruktureller Entscheidungen — ganz ohne manuelle Datenauswertung.",
+    "features": [
+      "Fahrzeugzahlen & Klassifizierung nach Tageszeit",
+      "Geschwindigkeitsverteilungs-Histogramme & Perzentil-Aufschlüsselungen",
+      "Analyse des akustischen Frequenzspektrums",
+      "Wetterkorrelations-Overlays (Regen, Nebel, Temperatur)",
+      "Automatisierter PDF-Export & teilbares Web-Dashboard"
+    ],
+    "cta": "Musterbericht ansehen",
+    "metrics": {
+      "vehicleCount": { "label": "Fahrzeugzahl", "unit": "/ Woche" },
+      "avgSpeed": { "label": "Ø Geschwindigkeit", "unit": "km/h" },
+      "peakNoise": { "label": "Spitzenlärmpegel", "unit": "dB" },
+      "weatherEvents": { "label": "Wetterkorrelierte Ereignisse", "unit": "markiert" }
+    },
+    "trendSuffix": "ggü. Vorperiode"
+  },
+  "solutions": {
+    "tagline": "Für wen es geeignet ist",
+    "title": "Lösungen",
+    "subtitle": "Eine einzige Telemetrieplattform, zugeschnitten auf die wichtigsten Entscheidungen öffentlicher und privater Akteure.",
+    "items": [
+      {
+        "title": "Kommunen & lokale Verwaltung",
+        "description": "Unterstützen Sie Kommunen, Bürgerinitiativen und Verkehrsberuhigungsprojekte mit objektiven, anonymisierten Daten — geeignet für Ratspräsentationen ebenso wie für Bürgerengagement."
+      },
+      {
+        "title": "Verkehrsplanung & Ingenieurwesen",
+        "description": "Erhalten Sie detaillierte Geschwindigkeits-, Volumen- und Akustikdaten, um Maßnahmen zu modellieren, Straßenumbauten zu validieren und deren realen Effekt zu quantifizieren."
+      },
+      {
+        "title": "Immobilien & Lärmschutz",
+        "description": "Dokumentieren Sie akustische Frequenzspektren in der Nähe von Bauprojekten zur Unterstützung von Lärmschutzgutachten und behördlichen Nachweisen."
+      },
+      {
+        "title": "Forschung & Umweltstudien",
+        "description": "Korrelieren Sie Verkehrsverhalten mit Live-Wetterbedingungen über langfristige Einsätze hinweg für akademische und ökologische Forschung."
+      }
+    ]
+  },
+  "about": {
+    "tagline": "Über Monitec",
+    "title": "Entwickelt für vertrauenswürdige, umsetzbare Verkehrsintelligenz",
+    "paragraphs": [
+      "Monitec entwickelt diagnostische Telemetrie- und Entscheidungsunterstützungssysteme, die Kommunen, Planern und Infrastrukturteams helfen zu verstehen, wie sich Fahrzeuge auf ihren Straßen bewegen — ohne die Privatsphäre der Menschen hinter dem Steuer zu beeinträchtigen.",
+      "Unsere kompakten, selbst installierbaren Sensor-Kits werden direkt an Kunden versandt, mit Standard-230V-, 12V-Batterie- oder Solarbetrieb und liefern vollständig anonymisierte statistische Berichte zurück — nie Video, nie Kennzeichen, nie Audioaufnahmen von Gesprächen.",
+      "Gegründet von einem langjährigen ehemaligen Airbus-Ingenieur, wendet Monitec Luftfahrt-Systemdokumentation und technische Präzision auf Roadside-Telemetrie und Verkehrsanalyse an."
+    ],
+    "values": [
+      {
+        "title": "Privacy by Design",
+        "description": "Jede Produktentscheidung beginnt mit Anonymisierung — wir entwickeln Systeme, die Verhalten messen, nicht Identität."
+      },
+      {
+        "title": "Selbstinstallation leicht gemacht",
+        "description": "Hardware, die in einer Box geliefert wird und sofort einsatzbereit ist — keine Techniker, keine Ausfallzeiten, keine Komplexität."
+      },
+      {
+        "title": "Entscheidungsreife Daten",
+        "description": "Wir sammeln nicht nur Daten — wir verwandeln sie in Berichte, auf deren Basis Kommunen und Planer sofort handeln können."
+      }
+    ]
+  },
+  "privacy": {
+    "tagline": "Datenschutz & DSGVO",
+    "title": "Compliance in jeder Ebene verankert",
+    "subtitle": "Monitec wurde von Grund auf so entwickelt, dass die Privatsphäre jeder Person auf der Straße respektiert wird, während Entscheidungsträgern dennoch die nötigen Erkenntnisse geliefert werden.",
+    "guarantees": [
+      {
+        "title": "Keine Video- oder Bildspeicherung",
+        "description": "Unsere Sensoren verarbeiten Signale in Echtzeit und speichern niemals Videoaufnahmen oder Standbilder von Fahrzeugen oder Personen."
+      },
+      {
+        "title": "Keine Kennzeichenerkennung",
+        "description": "Eine Fahrzeugidentifikation findet nie statt — Daten werden ausschließlich als anonymisierte Statistiken erfasst und gemeldet."
+      },
+      {
+        "title": "DSGVO- & CNIL-konform",
+        "description": "Vollständig konform mit der EU-DSGVO und den französischen CNIL-Anforderungen sowie den österreichischen DSGVO-Standards für kommunale Einsätze."
+      },
+      {
+        "title": "100 % anonymisierte Statistiken",
+        "description": "Alle Ausgaben — Zählungen, Geschwindigkeitsverteilungen, akustische Spektren — sind aggregierte statistische Daten ohne personenbezogene Identifikatoren."
+      }
+    ]
+  },
+  "requestKit": {
+    "tagline": "Produktdemo",
+    "title": "Vereinbaren Sie Ihre Produktdemo",
+    "subtitle": "Interessiert daran, Monitec in Aktion zu sehen? Wählen Sie unten direkt in unserem Kalender einen passenden Termin, und wir führen Sie durch eine Live-Demo des Deployment-Kits, zugeschnitten auf Ihren Anwendungsfall — unverbindlich.",
+    "iframeTitle": "Monitec-Produktdemo vereinbaren",
+    "note": "Lieber per E-Mail? Sie können uns auch direkt kontaktieren, und wir helfen Ihnen, einen Termin zu finden.",
+    "emailCta": "Stattdessen E-Mail senden"
+  },
+  "footer": {
+    "copyright": "© {{year}} Monitec. Alle Rechte vorbehalten.",
+    "complianceNote": "Vollständig DSGVO-konform · 100 % anonymisierte statistische Daten"
+  }
+}

@@ -1,13 +1,18 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { REGIONS } from "../data/regions";
+import { STORAGE_KEY } from "../i18n";
 
 /**
- * Dynamic Region / Domain Switcher toggle.
+ * Dynamic Region / Language Switcher toggle.
  * Lets visitors pick between .io (EN), .at (DE) and .fr (FR).
- * Selecting a region updates the logo domain suffix and navbar
- * language in real time via the onChange callback.
+ * Selecting a region calls i18n.changeLanguage(), persists the explicit
+ * choice to localStorage (so it takes priority on future visits), and
+ * updates the logo domain suffix / tagline / all text in real time via
+ * the i18next language change.
  */
-export default function RegionSwitcher({ activeRegion, onChange }) {
+export default function RegionSwitcher({ activeRegion }) {
+  const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
 
@@ -20,6 +25,17 @@ export default function RegionSwitcher({ activeRegion, onChange }) {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  function handleSelect(region) {
+    i18n.changeLanguage(region.langCode);
+    try {
+      window.localStorage.setItem(STORAGE_KEY, region.langCode);
+    } catch {
+      // localStorage may be unavailable — the language change still applies
+      // for this session even if we can't persist the preference.
+    }
+    setOpen(false);
+  }
 
   return (
     <div className="relative" ref={containerRef}>
@@ -57,10 +73,7 @@ export default function RegionSwitcher({ activeRegion, onChange }) {
                 type="button"
                 role="option"
                 aria-selected={region.code === activeRegion.code}
-                onClick={() => {
-                  onChange(region);
-                  setOpen(false);
-                }}
+                onClick={() => handleSelect(region)}
                 className={`flex w-full items-center justify-between px-4 py-2.5 text-sm transition-colors ${
                   region.code === activeRegion.code
                     ? "bg-neutral-light text-secondary font-semibold"

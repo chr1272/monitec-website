@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
 import RegionSwitcher from "./RegionSwitcher";
-import { REGIONS, DEFAULT_REGION_CODE } from "../data/regions";
+import { regionForLanguage } from "../data/regions";
 
 const NAV_ITEMS = [
   { key: "howItWorks", href: "#how-it-works" },
@@ -12,9 +13,8 @@ const NAV_ITEMS = [
 ];
 
 export default function Header() {
-  const [activeRegion, setActiveRegion] = useState(
-    REGIONS.find((r) => r.code === DEFAULT_REGION_CODE) ?? REGIONS[0]
-  );
+  const { t, i18n } = useTranslation();
+  const activeRegion = regionForLanguage(i18n.language);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -33,19 +33,19 @@ export default function Header() {
               href={item.href}
               className="whitespace-nowrap text-[13px] font-semibold text-text-slate transition-colors hover:text-secondary xl:text-sm"
             >
-              {activeRegion.nav[item.key]}
+              {t(`nav.${item.key}`)}
             </a>
           ))}
         </nav>
 
         {/* Right side: region switcher + CTA */}
         <div className="hidden items-center gap-2 lg:flex xl:gap-4">
-          <RegionSwitcher activeRegion={activeRegion} onChange={setActiveRegion} />
+          <RegionSwitcher activeRegion={activeRegion} />
           <a
             href="#request-kit"
             className="whitespace-nowrap rounded-button bg-accent px-4 py-2.5 text-[13px] font-semibold text-primary shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md xl:px-5 xl:text-sm"
           >
-            {activeRegion.nav.cta}
+            {t("nav.cta")}
           </a>
         </div>
 
@@ -89,19 +89,19 @@ export default function Header() {
                 onClick={() => setMobileOpen(false)}
                 className="rounded-button px-2 py-3 text-sm font-semibold text-text-slate hover:bg-neutral-light hover:text-secondary"
               >
-                {activeRegion.nav[item.key]}
+                {t(`nav.${item.key}`)}
               </a>
             ))}
           </nav>
 
           <div className="mt-4 flex flex-col gap-3">
-            <RegionSwitcher activeRegion={activeRegion} onChange={setActiveRegion} />
+            <RegionSwitcher activeRegion={activeRegion} />
             <a
               href="#request-kit"
               onClick={() => setMobileOpen(false)}
               className="rounded-button bg-accent px-5 py-3 text-center text-sm font-semibold text-primary shadow-sm"
             >
-              {activeRegion.nav.cta}
+              {t("nav.cta")}
             </a>
           </div>
         </div>

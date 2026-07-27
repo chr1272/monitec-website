@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "Monitec — Données Empiriques de Trafic & Acoustiques",
+    "description": "Monitec — Données Empiriques de Trafic & Acoustiques. Stations de télémétrie routières autonomes livrées par transporteur, collectant le nombre de véhicules, les vecteurs de vitesse, les bandes de fréquence en décibels et les données météo pour l'aide à la décision."
+  },
+  "nav": {
+    "howItWorks": "Comment ça marche",
+    "dataReports": "Données & Rapports",
+    "solutions": "Solutions",
+    "about": "À propos",
+    "privacy": "Confidentialité & RGPD",
+    "cta": "Demander une démo"
+  },
+  "hero": {
+    "tagline": "Données Empiriques de Trafic & Acoustiques",
+    "title": "Données Empiriques de Trafic & Acoustiques",
+    "subtitle": "Stations de télémétrie routières autonomes livrées par transporteur. Collectez avec précision le nombre de véhicules, les vecteurs de vitesse, les bandes de fréquence en décibels et les données météo pour l'aide à la décision.",
+    "ctaDemo": "Demander une démo",
+    "ctaReport": "Voir un rapport exemple"
+  },
+  "howItWorks": {
+    "tagline": "Simple. Rapide. Conforme.",
+    "title": "Comment ça marche",
+    "subtitle": "Du déballage à l'analyse en quatre étapes simples — sans équipe d'installation, sans intégration complexe.",
+    "steps": [
+      {
+        "title": "Déployez le kit de capteurs",
+        "description": "Déballez et installez vous-même l'unité routière compacte en quelques minutes. Alimentez-la avec l'adaptateur 230V inclus, une batterie 12V ou un panneau solaire — aucune visite technique requise."
+      },
+      {
+        "title": "Collectez les données de télémétrie",
+        "description": "L'appareil mesure en continu et de manière anonyme le nombre de véhicules, la distribution des vitesses et le spectre de fréquence acoustique, en les corrélant aux conditions météorologiques en temps réel."
+      },
+      {
+        "title": "Retour & synchronisation",
+        "description": "Renvoyez l'unité à l'aide de la boîte de retour prépayée, ou synchronisez-la à distance là où la connectivité le permet. Toutes les données sont chiffrées et 100 % anonymisées — aucune vidéo, aucune plaque d'immatriculation."
+      },
+      {
+        "title": "Recevez votre rapport",
+        "description": "Recevez un rapport d'analyse PDF et web automatisé avec des informations exploitables — prêt à soutenir les décisions municipales, la planification du trafic et les investissements en sécurité."
+      }
+    ]
+  },
+  "dataReports": {
+    "tagline": "Données & Rapports",
+    "title": "Des informations prêtes à la décision, générées automatiquement",
+    "subtitle": "Chaque déploiement produit un rapport d'analyse structuré conçu pour appuyer les décisions municipales et d'infrastructure — sans traitement manuel des données.",
+    "features": [
+      "Comptage et classification des véhicules par heure de la journée",
+      "Histogrammes de distribution des vitesses et répartitions par percentile",
+      "Analyse du spectre de fréquence acoustique",
+      "Superpositions de corrélation météo (pluie, brouillard, température)",
+      "Export PDF automatisé et tableau de bord web partageable"
+    ],
+    "cta": "Voir un rapport exemple",
+    "metrics": {
+      "vehicleCount": { "label": "Nombre de véhicules", "unit": "/ semaine" },
+      "avgSpeed": { "label": "Vitesse moyenne", "unit": "km/h" },
+      "peakNoise": { "label": "Niveau de bruit maximal", "unit": "dB" },
+      "weatherEvents": { "label": "Événements corrélés à la météo", "unit": "signalés" }
+    },
+    "trendSuffix": "vs. période précédente"
+  },
+  "solutions": {
+    "tagline": "Pour qui",
+    "title": "Solutions",
+    "subtitle": "Une plateforme de télémétrie unique, adaptée aux décisions les plus importantes pour les parties prenantes publiques et privées.",
+    "items": [
+      {
+        "title": "Municipalités & administrations locales",
+        "description": "Soutenez les municipalités, les organisations citoyennes et les initiatives d'apaisement du trafic avec des données objectives et anonymisées — prêtes pour les présentations au conseil comme pour le plaidoyer communautaire."
+      },
+      {
+        "title": "Planification du trafic & ingénierie",
+        "description": "Obtenez des données granulaires de vitesse, de volume et acoustiques pour modéliser des interventions, valider des modifications de conception routière et quantifier leur impact réel."
+      },
+      {
+        "title": "Immobilier & conformité sonore",
+        "description": "Documentez les spectres de fréquence acoustique à proximité des projets immobiliers pour appuyer les études d'impact sonore et les dossiers de conformité réglementaire."
+      },
+      {
+        "title": "Recherche & études environnementales",
+        "description": "Corrélez le comportement du trafic avec les conditions météorologiques en temps réel sur des déploiements de longue durée pour la recherche académique et environnementale."
+      }
+    ]
+  },
+  "about": {
+    "tagline": "À propos de Monitec",
+    "title": "Conçu pour une intelligence du trafic fiable et exploitable",
+    "paragraphs": [
+      "Monitec conçoit des systèmes de télémétrie diagnostique et d'aide à la décision qui aident les municipalités, les urbanistes et les équipes d'infrastructure à comprendre comment les véhicules circulent sur leurs routes — sans compromettre la vie privée des personnes au volant.",
+      "Nos kits de capteurs compacts et auto-installables sont expédiés directement aux clients, alimentés par des installations standard 230V, batterie 12V ou solaires, et renvoient des rapports statistiques entièrement anonymisés — jamais de vidéo, jamais de plaques d'immatriculation, jamais d'enregistrements audio de conversations.",
+      "Fondée par un ancien ingénieur Airbus de longue date, Monitec applique la rigueur de documentation système et d'ingénierie de l'aérospatiale à la télémétrie routière et à l'analyse du trafic."
+    ],
+    "values": [
+      {
+        "title": "Confidentialité dès la conception",
+        "description": "Chaque décision produit commence par l'anonymisation — nous construisons des systèmes qui mesurent le comportement, pas l'identité."
+      },
+      {
+        "title": "Simplicité d'auto-installation",
+        "description": "Un matériel livré en boîte et fonctionnel dès la sortie — sans techniciens, sans temps d'arrêt, sans complexité."
+      },
+      {
+        "title": "Données prêtes à la décision",
+        "description": "Nous ne collectons pas seulement des données — nous les transformons en rapports que les municipalités et les urbanistes peuvent exploiter immédiatement."
+      }
+    ]
+  },
+  "privacy": {
+    "tagline": "Confidentialité & RGPD",
+    "title": "Conformité intégrée à chaque niveau",
+    "subtitle": "Monitec est conçu dès l'origine pour respecter la vie privée de chaque individu sur la route, tout en fournissant les informations dont les décideurs ont besoin.",
+    "guarantees": [
+      {
+        "title": "Aucun stockage vidéo ou image",
+        "description": "Nos capteurs traitent les signaux en temps réel et ne stockent jamais de séquences vidéo ni d'images fixes de véhicules ou de personnes."
+      },
+      {
+        "title": "Aucune reconnaissance de plaque d'immatriculation",
+        "description": "L'identification des véhicules n'est jamais effectuée — les données sont capturées et rapportées uniquement sous forme de statistiques anonymisées."
+      },
+      {
+        "title": "Conforme RGPD & CNIL",
+        "description": "Pleinement conforme au RGPD européen et aux exigences de la CNIL française, ainsi qu'aux normes DSGVO autrichiennes pour les déploiements municipaux."
+      },
+      {
+        "title": "Statistiques 100 % anonymisées",
+        "description": "Toutes les sorties — comptages, distributions de vitesse, spectres acoustiques — sont des données statistiques agrégées sans identifiants personnels."
+      }
+    ]
+  },
+  "requestKit": {
+    "tagline": "Démo produit",
+    "title": "Planifiez votre démo produit",
+    "subtitle": "Intéressé de voir Monitec en action ? Choisissez un créneau qui vous convient directement sur notre calendrier ci-dessous, et nous vous ferons une démonstration en direct du kit de déploiement adaptée à votre cas d'usage — sans engagement.",
+    "iframeTitle": "Planifier une démo produit Monitec",
+    "note": "Vous préférez l'e-mail ? Vous pouvez aussi nous contacter directement et nous vous aiderons à trouver un créneau.",
+    "emailCta": "Nous écrire à la place"
+  },
+  "footer": {
+    "copyright": "© {{year}} Monitec. Tous droits réservés.",
+    "complianceNote": "Entièrement conforme au RGPD · Données statistiques 100 % anonymisées"
+  }
+}
