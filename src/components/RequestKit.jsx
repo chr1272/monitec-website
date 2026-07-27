@@ -36,7 +36,8 @@ export default function RequestKit() {
         </p>
         <div className="mx-auto mt-4 flex max-w-md justify-center">
           <a
-            href="mailto:hello@monitec.io?subject=Product%20Demo%20Request"
+            href="mailto:info@monitec.io?subject=Product%20Demo%20Request"
+
             className="shrink-0 rounded-button bg-accent px-6 py-3 font-semibold text-primary shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md"
           >
             {t("requestKit.emailCta")}
