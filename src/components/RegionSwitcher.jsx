@@ -52,6 +52,12 @@ export default function RegionSwitcher({ activeRegion }) {
 
     // Local/dev/preview environments (e.g. localhost, *.web.app) don't have
     // the regional domains available, so just switch the language in place.
+    // Strip any anchor hash from the address bar and scroll cleanly to the
+    // top before switching languages, so the new language content isn't
+    // rendered mid-page at a now-stale anchor position.
+    window.history.pushState("", document.title, window.location.pathname + window.location.search);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
     i18n.changeLanguage(region.langCode);
     try {
       window.localStorage.setItem(STORAGE_KEY, region.langCode);
@@ -61,6 +67,7 @@ export default function RegionSwitcher({ activeRegion }) {
     }
     setOpen(false);
   }
+
 
 
   return (
