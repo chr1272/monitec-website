@@ -34,14 +34,16 @@ export default function RegionSwitcher({ activeRegion }) {
     const currentHostname = window.location.hostname;
     const onProductionDomain = PRODUCTION_HOSTNAMES.includes(currentHostname);
 
-    // On a real monitec.* production domain: navigate the browser to the
-    // matching regional domain so the address bar reflects the chosen
-    // language/region. The domain rule in i18n.js will pick up the correct
-    // language on load. This causes a full page reload by design.
+    // On a real monitec.* production domain: navigate the browser straight
+    // to the matching regional domain's root URL — no path, no query
+    // string, no anchor hash carried over. The domain rule in i18n.js will
+    // pick up the correct language on load. This causes a full page reload
+    // by design.
     if (onProductionDomain && currentHostname !== targetHostname) {
-      window.location.href = `${window.location.protocol}//${targetHostname}${window.location.pathname}${window.location.search}${window.location.hash}`;
+      window.location.href = `${window.location.protocol}//${targetHostname}/`;
       return;
     }
+
 
     // Local/dev/preview environments (e.g. localhost, *.web.app) don't have
     // the regional domains available, so just switch the language in place.
