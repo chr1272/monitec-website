@@ -1,10 +1,14 @@
 import { useTranslation } from "react-i18next";
+import { regionForLanguage } from "../data/regions";
 
 // Google Calendar Appointment Scheduling booking link.
 const GOOGLE_CALENDAR_EMBED_URL = "https://calendar.app.google/Suixxch7oeqBf6Gw8";
 
 export default function RequestKit() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const activeRegion = regionForLanguage(i18n.language);
+  const contactEmail = `info@monitec${activeRegion.domain}`;
+
 
   return (
     <section id="request-kit" className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
@@ -36,10 +40,10 @@ export default function RequestKit() {
         </p>
         <div className="mx-auto mt-4 flex max-w-md justify-center">
           <a
-            href="mailto:info@monitec.io?subject=Product%20Demo%20Request"
-
+            href={`mailto:${contactEmail}?subject=Product%20Demo%20Request`}
             className="shrink-0 rounded-button bg-accent px-6 py-3 font-semibold text-primary shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md"
           >
+
             {t("requestKit.emailCta")}
           </a>
         </div>
