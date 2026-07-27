@@ -1,15 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { REGIONS } from "../data/regions";
-import { STORAGE_KEY } from "../i18n";
 
 /**
  * Dynamic Region / Language Switcher toggle.
  * Lets visitors pick between .io (EN), .at (DE) and .fr (FR).
- * Selecting a region calls i18n.changeLanguage(), persists the explicit
- * choice to localStorage (so it takes priority on future visits), and
- * updates the logo domain suffix / tagline / all text in real time via
- * the i18next language change.
+ * Selecting a region navigates to the matching domain (or, in local/dev
+ * environments where regional domains aren't available, switches the
+ * in-memory i18next language directly). The URL's domain extension is the
+ * sole source of truth for the display language — nothing is persisted.
  */
 // The real production hostnames the site is deployed to, derived from the
 // region domain suffixes (e.g. "monitec.io", "monitec.at", "monitec.fr").
@@ -40,12 +39,6 @@ export default function RegionSwitcher({ activeRegion }) {
     // language/region. The domain rule in i18n.js will pick up the correct
     // language on load. This causes a full page reload by design.
     if (onProductionDomain && currentHostname !== targetHostname) {
-      try {
-        window.localStorage.setItem(STORAGE_KEY, region.langCode);
-      } catch {
-        // localStorage may be unavailable — the domain rule will still
-        // resolve the correct language on the target domain.
-      }
       window.location.href = `${window.location.protocol}//${targetHostname}${window.location.pathname}${window.location.search}${window.location.hash}`;
       return;
     }
@@ -59,12 +52,6 @@ export default function RegionSwitcher({ activeRegion }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
 
     i18n.changeLanguage(region.langCode);
-    try {
-      window.localStorage.setItem(STORAGE_KEY, region.langCode);
-    } catch {
-      // localStorage may be unavailable — the language change still applies
-      // for this session even if we can't persist the preference.
-    }
     setOpen(false);
   }
 

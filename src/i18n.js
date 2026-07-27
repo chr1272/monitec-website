@@ -5,51 +5,23 @@ import en from "./locales/en.json";
 import de from "./locales/de.json";
 import fr from "./locales/fr.json";
 
-export const STORAGE_KEY = "monitec_user_language";
 export const SUPPORTED_LANGUAGES = ["en", "de", "fr"];
 
 /**
- * Resolves the initial language following a strict priority:
+ * Resolves the display language based solely on the current URL's hostname.
+ * No cookies, no localStorage, no navigator/browser language, no other
+ * state is consulted — the domain extension is the single source of truth,
+ * every time the page loads.
  *
- * 1. Domain rule — country-specific TLDs always win, regardless of any
- *    previously persisted preference:
- *    - hostname ending in ".at" forces "de" (German).
- *    - hostname ending in ".fr" forces "fr" (French).
- * 2. For generic domains (".io", localhost, previews, etc.):
- *    a. Explicit user selection persisted in localStorage.
- *    b. Browser language (navigator.language) — de -> German, fr -> French,
- *       otherwise falls back to "en".
+ * - hostname ending in ".at" -> "de" (German).
+ * - hostname ending in ".fr" -> "fr" (French).
+ * - everything else (".io", localhost, previews, etc.) -> "en" (English).
  */
 export function resolveInitialLanguage() {
   const hostname = typeof window !== "undefined" ? window.location.hostname : "";
 
-  // Priority 1: country-specific TLD domain rule — always wins.
   if (hostname.endsWith(".at")) return "de";
   if (hostname.endsWith(".fr")) return "fr";
-
-  // Priority 2a: explicit user selection persisted from a previous visit
-  // (only applies to .io / generic / local domains).
-  try {
-    const saved = window.localStorage.getItem(STORAGE_KEY);
-    if (saved && SUPPORTED_LANGUAGES.includes(saved)) {
-      return saved;
-    }
-  } catch {
-    // localStorage may be unavailable (privacy mode, SSR, etc.) — ignore.
-  }
-
-  // Priority 2b: browser language for .io / generic / local domains.
-  const browserLanguages =
-    (typeof navigator !== "undefined" &&
-      (navigator.languages?.length ? navigator.languages : [navigator.language])) ||
-    [];
-
-  for (const lang of browserLanguages) {
-    if (!lang) continue;
-    const normalized = lang.toLowerCase();
-    if (normalized.startsWith("de")) return "de";
-    if (normalized.startsWith("fr")) return "fr";
-  }
 
   return "en";
 }
