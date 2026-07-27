@@ -26,12 +26,12 @@ export default function Header() {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-3 lg:flex xl:gap-6">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.key}
               href={item.href}
-              className="text-sm font-semibold text-text-slate transition-colors hover:text-secondary"
+              className="whitespace-nowrap text-[13px] font-semibold text-text-slate transition-colors hover:text-secondary xl:text-sm"
             >
               {activeRegion.nav[item.key]}
             </a>
@@ -39,15 +39,16 @@ export default function Header() {
         </nav>
 
         {/* Right side: region switcher + CTA */}
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-2 lg:flex xl:gap-4">
           <RegionSwitcher activeRegion={activeRegion} onChange={setActiveRegion} />
           <a
             href="#request-kit"
-            className="rounded-button bg-accent px-5 py-2.5 text-sm font-semibold text-primary shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md"
+            className="whitespace-nowrap rounded-button bg-accent px-4 py-2.5 text-[13px] font-semibold text-primary shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md xl:px-5 xl:text-sm"
           >
             {activeRegion.nav.cta}
           </a>
         </div>
+
 
         {/* Mobile menu button */}
         <button

@@ -31,7 +31,7 @@ export default function RegionSwitcher({ activeRegion, onChange }) {
         className="flex items-center gap-1.5 rounded-button border border-border-light px-3 py-1.5 text-sm font-semibold text-primary hover:border-accent hover:text-secondary transition-colors"
       >
         <span className="font-data tracking-wide">{activeRegion.domain}</span>
-        <span className="text-xs text-secondary">/ {activeRegion.lang}</span>
+        <span className="text-xs text-secondary">/{activeRegion.lang}</span>
         <svg
           className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`}
           viewBox="0 0 20 20"
