@@ -1,10 +1,7 @@
 import { useTranslation } from "react-i18next";
 
-// Google Calendar Appointment Scheduling embed URL.
-// Replace this with your own appointment schedule's public embed link:
-// Google Calendar → Settings → Appointment schedules → [your schedule] → "Share" → "Embed" tab → copy the src URL.
-const GOOGLE_CALENDAR_EMBED_URL =
-  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2wL0qsRxLxNc6RgU3z2xL6xGx5ExamplePlaceholder?gv=true";
+// Google Calendar Appointment Scheduling booking link.
+const GOOGLE_CALENDAR_EMBED_URL = "https://calendar.app.google/Suixxch7oeqBf6Gw8";
 
 export default function RequestKit() {
   const { t } = useTranslation();
