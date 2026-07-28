@@ -25,6 +25,11 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
 body {
   @apply bg-neutral-light text-text-slate font-body antialiased;
   line-height: 1.6;
