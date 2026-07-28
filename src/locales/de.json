@@ -135,9 +135,13 @@
     "title": "Vereinbaren Sie Ihre Produktdemo",
     "subtitle": "Interessiert daran, Monitec in Aktion zu sehen? Wählen Sie unten direkt in unserem Kalender einen passenden Termin, und wir führen Sie durch eine Live-Demo des Deployment-Kits, zugeschnitten auf Ihren Anwendungsfall — unverbindlich.",
     "iframeTitle": "Monitec-Produktdemo vereinbaren",
+    "calendarTitle": "Vereinbaren Sie eine Live-Monitec-Telemetrie-Demo",
+    "calendarCta": "Datum & Uhrzeit wählen (Google Kalender)",
+    "calendarFallbackNote": "Öffnet Google Kalender in einem neuen Tab — funktioniert in jedem Browser, auch in Safari unter macOS mit strengen Cookie-Einstellungen.",
     "note": "Lieber per E-Mail? Sie können uns auch direkt kontaktieren, und wir helfen Ihnen, einen Termin zu finden.",
     "emailCta": "Stattdessen E-Mail senden"
   },
+
   "footer": {
     "copyright": "© {{year}} Monitec. Alle Rechte vorbehalten.",
     "complianceNote": "Vollständig DSGVO-konform · 100 % anonymisierte statistische Daten"

@@ -135,9 +135,13 @@
     "title": "Planifiez votre démo produit",
     "subtitle": "Intéressé de voir Monitec en action ? Choisissez un créneau qui vous convient directement sur notre calendrier ci-dessous, et nous vous ferons une démonstration en direct du kit de déploiement adaptée à votre cas d'usage — sans engagement.",
     "iframeTitle": "Planifier une démo produit Monitec",
+    "calendarTitle": "Planifiez une démo en direct de la télémétrie Monitec",
+    "calendarCta": "Choisir une date et une heure (Google Agenda)",
+    "calendarFallbackNote": "Ouvre Google Agenda dans un nouvel onglet — fonctionne sur tous les navigateurs, y compris Safari sur macOS avec des réglages de cookies stricts.",
     "note": "Vous préférez l'e-mail ? Vous pouvez aussi nous contacter directement et nous vous aiderons à trouver un créneau.",
     "emailCta": "Nous écrire à la place"
   },
+
   "footer": {
     "copyright": "© {{year}} Monitec. Tous droits réservés.",
     "complianceNote": "Entièrement conforme au RGPD · Données statistiques 100 % anonymisées"

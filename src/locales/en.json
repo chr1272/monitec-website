@@ -135,9 +135,13 @@
     "title": "Schedule Your Product Demo",
     "subtitle": "Interested in seeing Monitec in action? Pick a time that works for you directly on our calendar below, and we'll walk you through a live deployment kit demo tailored to your use case — no commitment required.",
     "iframeTitle": "Schedule a Monitec product demo",
+    "calendarTitle": "Schedule a Live Monitec Telemetry Demo",
+    "calendarCta": "Select Date & Time (Google Calendar)",
+    "calendarFallbackNote": "Opens Google Calendar in a new tab — works on every browser, including Safari on macOS with strict cookie settings.",
     "note": "Prefer email? You can also reach us directly and we'll help you find a slot.",
     "emailCta": "Email Us Instead"
   },
+
   "footer": {
     "copyright": "© {{year}} Monitec. All rights reserved.",
     "complianceNote": "Fully GDPR-compliant · 100% anonymized statistical data"
