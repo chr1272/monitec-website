@@ -137,7 +137,8 @@
     "iframeTitle": "Schedule a Monitec product demo",
     "calendarTitle": "Schedule a Live Monitec Telemetry Demo",
     "calendarCta": "Select Date & Time (Google Calendar)",
-    "calendarFallbackNote": "Opens Google Calendar in a new tab — works on every browser, including Safari on macOS with strict cookie settings.",
+    "calendarFallbackNote": "Opens Google Calendar in a new tab.",
+
     "note": "Prefer email? You can also reach us directly and we'll help you find a slot.",
     "emailCta": "Email Us Instead"
   },

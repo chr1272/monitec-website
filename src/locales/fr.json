@@ -137,7 +137,8 @@
     "iframeTitle": "Planifier une démo produit Monitec",
     "calendarTitle": "Planifiez une démo en direct de la télémétrie Monitec",
     "calendarCta": "Choisir une date et une heure (Google Agenda)",
-    "calendarFallbackNote": "Ouvre Google Agenda dans un nouvel onglet — fonctionne sur tous les navigateurs, y compris Safari sur macOS avec des réglages de cookies stricts.",
+    "calendarFallbackNote": "Ouvre Google Agenda dans un nouvel onglet.",
+
     "note": "Vous préférez l'e-mail ? Vous pouvez aussi nous contacter directement et nous vous aiderons à trouver un créneau.",
     "emailCta": "Nous écrire à la place"
   },
