@@ -140,7 +140,9 @@
     "calendarFallbackNote": "Ouvre Google Agenda dans un nouvel onglet.",
 
     "note": "Vous préférez l'e-mail ? Vous pouvez aussi nous contacter directement et nous vous aiderons à trouver un créneau.",
-    "emailCta": "Nous écrire à la place"
+    "emailCta": "Nous écrire à la place",
+    "emailSubject": "Demande de démonstration produit"
+
   },
 
   "footer": {

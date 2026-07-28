@@ -140,7 +140,9 @@
     "calendarFallbackNote": "Öffnet Google Kalender in einem neuen Tab.",
 
     "note": "Lieber per E-Mail? Sie können uns auch direkt kontaktieren, und wir helfen Ihnen, einen Termin zu finden.",
-    "emailCta": "Stattdessen E-Mail senden"
+    "emailCta": "Stattdessen E-Mail senden",
+    "emailSubject": "Anfrage für Produktdemo"
+
   },
 
   "footer": {

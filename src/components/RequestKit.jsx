@@ -81,7 +81,8 @@ export default function RequestKit() {
         </p>
         <div className="mx-auto mt-4 flex max-w-md justify-center">
           <a
-            href={`mailto:${contactEmail}?subject=Product%20Demo%20Request`}
+            href={`mailto:${contactEmail}?subject=${encodeURIComponent(t("requestKit.emailSubject"))}`}
+
             className="shrink-0 rounded-button bg-accent px-6 py-3 font-semibold text-primary shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-md"
           >
 

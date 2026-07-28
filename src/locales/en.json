@@ -140,7 +140,9 @@
     "calendarFallbackNote": "Opens Google Calendar in a new tab.",
 
     "note": "Prefer email? You can also reach us directly and we'll help you find a slot.",
-    "emailCta": "Email Us Instead"
+    "emailCta": "Email Us Instead",
+    "emailSubject": "Product Demo Request"
+
   },
 
   "footer": {
