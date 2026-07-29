@@ -36,3 +36,5 @@ lerna-debug.log*
 
 # Misc
 *.local
+public/favicon1.svg
+public/_favicon.svg
